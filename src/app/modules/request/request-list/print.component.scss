@@ -1,0 +1,40 @@
+.images:hover{
+    //filter: blur(5px);
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.listcharacters {
+    align-items: center;
+    width: 30%; 
+    //height: 400px;
+    margin: 1%;
+    float: left; 
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30px;
+}
+
+/*@media screen and (max-width: 720px) {
+div div { border: solid;
+        width: 90%; 
+        height: 400px;
+        margin: 5%; 
+    }
+}*/
+
+.titleList{
+    //align-items: center;
+    text-align: center;
+    min-width: 100%;
+    max-height: 140px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list{
+    position: relative;
+    display: block;
+}
