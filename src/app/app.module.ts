@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { RequestComponent } from './modules/request/request.component';
 import { from } from 'rxjs';
 import { RequestService } from './core/services/request.service';
-import { ModelsComponent } from './core/models/models.component';
+//import { ModelsComponent } from './core/models/character.model';
 
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
@@ -20,7 +20,7 @@ import { RequestModule } from './modules/request/request.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ModelsComponent
+    //ModelsComponent
   ],
   imports: [
     BrowserModule,

@@ -3,13 +3,12 @@
     <div class="titleList">
       <h2 style="text-decoration: underline; text-shadow: 7px 4px 5px grey; margin-top: 40px;">Rick and Morty Character List</h2>
       <h5>Filter by name by writing here ⬇️</h5>
-      <input type="text" placeholder="Filter by name" [(ngModel)]="searchTerm" />  
+      <input type="text" placeholder="Filter by name" (input)="handleFilter($event.target.value)" />  
     </div>
-  
-    <div class="listcharacters" *ngFor="let character of (printComponent | filterNames:searchTerm)">
+
+    <div class="listcharacters" *ngFor="let character of characters">
 
       <h3><a [routerLink]="['/request-detail/', character.id]"> {{ character.id }} - {{ character.name }} </a></h3>
        <a [routerLink]="['/request-detail/', character.id]"> <img class="images" [src]="character.image" [alt]="character.name"> </a>
-    
     </div>
 </div>

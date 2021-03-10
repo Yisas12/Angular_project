@@ -3,20 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { RequestRoutingModule } from './request-routing.module';
 import { RequestComponent } from './request.component';
-import { FilterNamesPipe } from '../../shared/pipes/filter-names.pipe';
+//import { FilterNamesPipe } from '../../shared/pipes/filter-names.pipe';
 import { PrintComponent } from './request-list/print.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { FilterNamesPipe } from 'src/app/shared/pipes/filter-names.pipe';
 
 @NgModule({
     declarations: [
         RequestComponent,
-        FilterNamesPipe,
         PrintComponent
     ],
     imports: [
         CommonModule,
-        RequestRoutingModule
+        RequestRoutingModule,
+        SharedModule
     ],
-    exports: [
+    providers:[
         FilterNamesPipe
     ]
 })

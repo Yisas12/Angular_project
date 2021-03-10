@@ -1,1 +1,1 @@
-<app-print [printComponent]="characterList"></app-print>
+<app-print *ngIf='characterList && characterList.length > 0' [printComponent]="characterList"></app-print>

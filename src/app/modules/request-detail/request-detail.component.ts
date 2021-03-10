@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RequestService } from '../../core/services/request.service';
-import { CharacterInterface, CharacterResponseInterface } from '../../core/models/models.component';
+import { CharacterInterface, CharacterResponseInterface } from '../../core/models/character.model';
 import { RequestComponent } from '../request/request.component';
 import { DatosComponent } from './components/data/datos.component';
 import { EpisodiosComponent } from './components/episodes/episodios.component';
